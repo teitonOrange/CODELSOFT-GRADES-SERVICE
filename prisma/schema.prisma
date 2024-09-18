@@ -1,0 +1,17 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Grade {
+  id          String  @id @default(uuid())
+  subjectName String 
+  grade       Int
+  gradeName   String 
+  comment     String 
+  userId      String
+}
