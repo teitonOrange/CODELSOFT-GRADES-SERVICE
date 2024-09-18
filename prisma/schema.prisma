@@ -14,4 +14,5 @@ model Grade {
   gradeName   String 
   comment     String 
   userId      String
+  studentId   String
 }
