@@ -10,7 +10,7 @@ generator client {
 model Grade {
   id          String  @id @default(uuid())
   subjectName String 
-  grade       Int
+  grade       Float
   gradeName   String 
   comment     String 
   userId      String
